@@ -76,6 +76,10 @@ fun HtmlEle.h4(text: String) {
     this.tag("h4", text)
 }
 
+fun HtmlEle.br() {
+    this.tag("br", "")
+}
+
 fun HtmlEle.p(text: String, c: HtmlEle.() -> Unit = {}) {
     this.tag("p", text, c)
 }
